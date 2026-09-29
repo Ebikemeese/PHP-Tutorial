@@ -1,12 +1,13 @@
 # PHP Tutorial Codebase (W3Schools Comprehensive Guide)
 
-This repository contains structured, runnable PHP scripts covering all concepts from the [W3Schools PHP Tutorial](https://www.w3schools.com/php/), organized following the pattern established in the Java tutorial repository.
+This repository contains structured, runnable PHP scripts covering all concepts from the [W3Schools PHP Tutorial](https://www.w3schools.com/php/).
 
 ---
 
 ## 📚 Curriculum & Module Structure
 
 ### 1. PHP Basics (`01-basics/`)
+
 - **`HelloWorldAndOutput.php`**: PHP syntax, tags (`<?php ?>`), `echo`, `print`, case sensitivity of keywords vs variable names.
 - **`Comments.php`**: Single-line (`//` and `#`), multi-line (`/* */`), and PHPDoc DocBlocks.
 - **`VariablesAndScope.php`**: Variable rules, local scope, global scope, the `global` keyword, `$GLOBALS` superglobal array, and `static` variables.
@@ -20,6 +21,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 2. Control Flow (`02-control-flow/`)
+
 - **`IfElse.php`**: `if`, `else`, `elseif`, logical condition evaluation, and nested `if` statements.
 - **`ShorthandIf.php`**: One-line shorthand `if`, Ternary operator (`?:`), Elvis operator (`?:`), and Null Coalescing chaining (`??`).
 - **`SwitchStatements.php`**: `switch`, `case`, `break`, `default`, and multi-case fallthrough grouping.
@@ -32,6 +34,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 3. Functions (`03-functions/`)
+
 - **`FunctionBasics.php`**: Declaring and executing functions, case-insensitivity of function names, reusability, and return values.
 - **`ParametersAndArguments.php`**: Single and multiple parameters, default argument values, pass-by-reference (`&$param`), and variadic functions (`...$args` / splat operator).
 - **`StrictTypesAndReturns.php`**: `declare(strict_types=1)`, argument type hinting, return type declarations, nullable types (`?string`), and `void` returns.
@@ -42,6 +45,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 4. Arrays (`04-arrays/`)
+
 - **`IndexedArrays.php`**: Creating indexed arrays, bracket indexing, counting elements with `count()`, and looping with `for` and `foreach`.
 - **`AssociativeArrays.php`**: Key-value pairs, adding and updating elements, and key-value traversal.
 - **`CreateAndManipulateArrays.php`**: Appending elements (`[] =`, `array_push`), removing elements (`unset()` vs `array_splice()`), `array_pop()`, `array_shift()`, and reindexing keys.
@@ -52,6 +56,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 5. Superglobals (`05-superglobals/`)
+
 - **`GlobalsSuperglobal.php`**: Understanding `$GLOBALS` and managing variables across scopes.
 - **`ServerSuperglobal.php`**: Server headers, host information, script paths, request methods, and protocol headers via `$_SERVER`.
 - **`RequestGetPost.php`**: Collecting URL parameters with `$_GET`, form payloads with `$_POST`, combined inspection via `$_REQUEST`, and security trade-offs.
@@ -60,6 +65,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 6. Forms Handling & Validation (`06-forms/`)
+
 - **`FormHandling.php`**: HTML forms with PHP integration, GET vs POST submission handling, and response rendering.
 - **`FormValidationAndSanitization.php`**: Preventing Cross-Site Scripting (XSS) with `htmlspecialchars()`, `trim()`, `stripslashes()`, and standard sanitization workflows.
 - **`FormRequiredFields.php`**: Required field validation, tracking error messages, and sticky form inputs.
@@ -69,6 +75,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 7. Advanced PHP Features (`07-advanced-features/`)
+
 - **`DateAndTime.php`**: Date formatting tokens (`date()`), Unix timestamps, `mktime()`, `strtotime()`, timezones, and the OOP `DateTime` class.
 - **`IncludeAndRequire.php`**: Modular code organization, `include` vs `require` error levels, `include_once`, and `require_once`.
 - **`FiltersAndSanitization.php`**: Validating and sanitizing inputs with `filter_var()`, IP/URL/Integer filters, filter flags, and custom `FILTER_CALLBACK` filters.
@@ -79,6 +86,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 8. File Handling (`08-file-handling/`)
+
 - **`sample_dictionary.txt`**: Sample vocabulary reference file for file reading demonstrations.
 - **`FileHandlingBasics.php`**: Checking file existence (`file_exists`), checking file size (`filesize`), quick output with `readfile()`, and whole-file operations with `file_get_contents()` and `file_put_contents()`.
 - **`FileOpenReadWrite.php`**: Granular stream operations with `fopen()`, access modes (`r`, `w`, `a`, `x`), reading lines with `fgets()`, reading characters with `fgetc()`, testing end-of-file with `feof()`, writing with `fwrite()`, and closing handles with `fclose()`.
@@ -88,6 +96,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 9. Object-Oriented Programming (OOP) Basics (`09-oop-basics/`)
+
 - **`ClassesAndObjects.php`**: Classes as blueprints, objects as instances, properties, methods, the `$this` pseudo-variable, and `instanceof`.
 - **`ConstructorAndDestructor.php`**: Object initialization with `__construct()`, teardown with `__destruct()`, lifecycle management, and PHP 8.0+ Constructor Property Promotion.
 - **`AccessModifiers.php`**: Property and method visibility (`public`, `protected`, `private`) and encapsulation with getters and setters.
@@ -97,6 +106,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 10. OOP Advanced Concepts (`10-oop-advanced/`)
+
 - **`AbstractClasses.php`**: Abstract base classes, abstract method contracts, and concrete subclass implementations.
 - **`Interfaces.php`**: Declaring interfaces with `interface`, multiple interface implementation with `implements`, and interface polymorphism.
 - **`Traits.php`**: Horizontal code reuse with `trait` and `use`, multiple traits, and resolving method name collisions with `insteadof` and `as`.
@@ -107,6 +117,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 11. Exceptions Handling (`11-exceptions/`)
+
 - **`TryCatchFinally.php`**: Robust error handling with `try`, `catch`, and `finally` blocks, and extracting exception details (`getMessage()`, `getCode()`, `getFile()`, `getLine()`).
 - **`ThrowingExceptions.php`**: Explicitly throwing exceptions with `throw new Exception()`, input guard clauses, and re-throwing exceptions.
 - **`CustomExceptions.php`**: Creating user-defined exception hierarchies by extending `Exception`, and handling multiple specific `catch` blocks.
@@ -114,6 +125,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 12. MySQL Database Interaction (`12-database-mysql/`)
+
 - **`MySQLConnect.php`**: Connecting to MySQL using MySQLi Object-Oriented, MySQLi Procedural, and PDO (PHP Data Objects).
 - **`CreateDatabaseAndTable.php`**: Executing DDL statements (`CREATE DATABASE`, `CREATE TABLE`) with primary keys, auto-increment, and timestamps.
 - **`InsertAndLastId.php`**: Inserting single records, retrieving auto-generated primary keys (`insert_id` and `lastInsertId()`), and batch transactions with `beginTransaction()` / `commit()`.
@@ -125,6 +137,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ---
 
 ### 13. XML Parsing & AJAX (`13-xml-and-ajax/`)
+
 - **`SimpleXmlParser.php`**: Loading XML from strings and files with `simplexml_load_string()`, element traversal, and attribute extraction.
 - **`XmlExpatParser.php`**: High-performance, memory-efficient event-driven XML stream parsing using `xml_parser_create()` and element/data handlers.
 - **`XmlDomParser.php`**: Tree-based XML parsing with `DOMDocument`, node retrieval with `getElementsByTagName()`, and document manipulation.
@@ -135,6 +148,7 @@ This repository contains structured, runnable PHP scripts covering all concepts 
 ## 🚀 How to Run the PHP Code
 
 ### 1. Running Individual Scripts via PHP CLI
+
 Open PowerShell or your terminal in the tutorial repository and run any file directly:
 
 ```powershell
@@ -149,6 +163,7 @@ php 07-advanced-features/DateAndTime.php
 ```
 
 ### 2. Running Forms and Web Scripts (Built-in Web Server)
+
 PHP includes a built-in development web server for previewing web pages, HTML forms, and upload endpoints:
 
 ```powershell
@@ -160,6 +175,7 @@ php -S localhost:8000
 ```
 
 Once started, open your web browser and visit:
+
 - Complete Registration Form: `http://localhost:8000/06-forms/CompleteFormExample.php`
 - File Upload Demo: `http://localhost:8000/08-file-handling/FileUpload.php`
 - AJAX Live Search: `http://localhost:8000/13-xml-and-ajax/AjaxPhpIntegration.php?q=a`
